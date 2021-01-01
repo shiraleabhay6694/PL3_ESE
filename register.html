@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registeration</title>
+	<!-- <link rel="stylesheet" type="text/css" href="form.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+	
+	<div class="jumbotron">
+
+		<h1 class="display-3" style="text-align:center">Registeration form</h1>
+		<button class="btn btn-warning "><a style="color:white"href="index.html">Home</a></button>
+		<hr id="head">
+	<aside style="float:right;width:30%;padding:3px;margin:3px;border:1px solid black">
+		<p><strong>Note:</strong> Please fill the form before deadline
+		</p>
+		
+		
+	</aside>
+	<br>
+	<br>
+	<br>
+	<br>
+		<form method="#" action="#">
+		
+			<fieldset class="Personal field">
+				<legend style="text-align:center;background-color:#237;color:white" class="border border-secondary"> Personal Information</legend>
+				<hr>
+				<section>
+					<div class="Name_Det">
+						<label>
+							First Name: <input type="text" name="First" required placeholder="Shri">
+						</label>
+						<label>
+							Middle Name: <input type="text" name="Middle" required placeholder="Rajendra">
+						</label>
+						<label>
+							Last Name: <input type="text" name="Last" required placeholder="Kadam">
+						</label>
+						
+					</div>
+					<br>
+					
+				
+					<div class="Mail_IDproof">
+						<label>
+							E-Mail: <input type="email" name="email" placeholder="abc@gmail.com" required>
+						</label>
+						<label>
+							ID Prrof: <input type="file" name="ID_poof" required>
+						</label>
+					</div>
+					<br>
+					<div>
+						<label>
+							<p>Address: </p><textarea rows="5" cols="20" required></textarea>
+						</label>
+					</div>
+				</section>
+			</fieldset>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<fieldset class="Edu field">
+				<legend style="text-align:center;background-color:#237;color:white" class="border border-secondary">Education Information</legend>
+				<hr>
+				<section>
+					<div>
+						<label>
+							Qualification: <input type="text" name="quali" placeholder="BTech/Mtech/Bsc etc..">
+						</label>
+						<label>
+							Branch: <select class="branch"required size="1">
+										<option>Choose Branch</option>
+										<option value="CS">Computer Science</option>
+										<option value="tronics">Electronics</option>
+										<option value="trical">Electrical</option>
+										<option value="IT">IT</option>
+										<option value="Mech">Mechanical</option>
+										<option value="civil">Civil</option>
+									</select>
+						</label>
+					</div>
+					<br>
+					<div class="College">
+
+						<label>
+							College Name: <input list="data" name="College" required>
+						</label>
+
+						<datalist id="data">
+							<option>Walchand College Of Engineering , sangli</option>
+							<option>Symbiosis Centre For Distance Learning SCDL, Pune</option>
+							<option>KIT College of Engineering (An Autonomous Institute)</option>
+							<option>Government College of Engineering, Karad</option>
+							<option>Tatyasaheb Kore Institute of Engineering & Technology</option>
+							<option>Government Polytechnic,Kolhapur</option>
+							<option>DKTE Society's Textile & Engineering Institute (An Autonomous Institute)</option>
+						</datalist>
+						
+					</div>
+					<br>
+					<div class="University">
+
+						<label>
+							University Name: <input list="data2" name="University" required>
+						</label>
+
+						<datalist id="data2">
+							<option>Dr. Babasaheb Ambedkar Marathwada University ,Aurangabad</option>
+							<option>Gondwana University	, Gadchiroli</option>
+							<option>Dr. Panjabrao Deshmukh Krishi Vidyapeeth,Akola</option>
+							<option>Shivaji University,kolhapur</option>
+							<option>Savitribai Phule Pune University,Pune</option>
+							<option>University of Mumbai,Mumbai</option>
+							<option>Yashwantrao Chavan Maharashtra Open University,Nashik</option>
+						</datalist>
+
+						<label>
+							password :<input type="password" name="pass" required>
+						</label>
+						
+						
+					</div>
+
+					
+
+
+				</section>
+			</fieldset>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+		
+	
+		
+
+		<button class="btn btn-success m-5" onclick="fun()">Submit</button>
+
+		<button class="btn btn-success m-5" type="reset">Reset</button>
+
+
+		<script type="text/javascript">
+			function fun(){
+				window.alert("Form Submitted Successfully!!")
+			}
+		</script>
+
+		</form>
+	</div>	
+	
+</div>
+	
+
+</body>
+</html>
